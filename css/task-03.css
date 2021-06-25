@@ -1,0 +1,19 @@
+.js-list {
+  list-style: none;
+}
+
+.js-gallery__list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.js-gallery__item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.js-gallery__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -3,3 +3,8 @@
 // Создай переменную counterValue в которой будет хранится текущее значение счетчика.
 // Создай функции increment и decrement для увеличения и уменьшения значения счетчика
 // Добавь слушатели кликов на кнопки, вызовы функций и обновление интерфейса
+
+// dataset.decrement
+// dataset.increment
+const counterValue = document.querySelector('#value').textContent;
+console.log(counterValue);

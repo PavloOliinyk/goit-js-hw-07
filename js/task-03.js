@@ -14,10 +14,22 @@ const images = [
 ];
 
 const listGalleryEl = document.querySelector('#gallery');
-console.log(listGalleryEl);
 
-// Используй массив объектов images для создания тегов img вложенных в li.
-// Для создания разметки используй шаблонные строки и insertAdjacentHTML().
+listGalleryEl.insertAdjacentHTML(
+  'afterbegin',
+  images.reduce(
+    (str, image) =>
+      str + `<li><img src="${image.url}" alt="${image.alt}"></img>`,
+    '',
+  ),
+);
 
-// Все элементы галереи должны добавляться в DOM за одну операцию вставки.
-// Добавь минимальное оформление галереи флексбоксами или гридами через css-классы.
+listGalleryEl.classList.add('js-list', 'js-gallery__list');
+
+listGalleryEl
+  .querySelectorAll('img')
+  .forEach((image) => image.classList.add('js-gallery__image'));
+
+listGalleryEl
+  .querySelectorAll('li')
+  .forEach((item) => item.classList.add('js-gallery__item'));
