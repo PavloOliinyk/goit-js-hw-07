@@ -18,18 +18,11 @@ const listGalleryEl = document.querySelector('#gallery');
 listGalleryEl.insertAdjacentHTML(
   'afterbegin',
   images.reduce(
-    (str, image) =>
-      str + `<li><img src="${image.url}" alt="${image.alt}"></img>`,
+    (str, { url, alt }) =>
+      str +
+      `<li class="gallery__item"><img src="${url}" alt="${alt}" class="gallery__image" /></li>`,
     '',
   ),
 );
 
-listGalleryEl.classList.add('js-list', 'js-gallery__list');
-
-listGalleryEl
-  .querySelectorAll('img')
-  .forEach((image) => image.classList.add('js-gallery__image'));
-
-listGalleryEl
-  .querySelectorAll('li')
-  .forEach((item) => item.classList.add('js-gallery__item'));
+listGalleryEl.classList.add('list', 'gallery__list');

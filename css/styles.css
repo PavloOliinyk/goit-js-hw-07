@@ -1,20 +1,21 @@
-.js-list {
+.list {
   list-style: none;
 }
 
-.js-gallery__list {
+.gallery__list {
   display: flex;
+  align-items: center;
 
   margin-left: -30px;
   padding: 0;
 }
 
-.js-gallery__item {
+.gallery__item {
   margin-left: 30px;
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.js-gallery__image {
+.gallery__image {
   display: block;
   max-width: 100%;
   height: auto;
