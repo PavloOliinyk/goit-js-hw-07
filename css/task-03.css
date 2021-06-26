@@ -4,7 +4,9 @@
 
 .js-gallery__list {
   display: flex;
+
   margin-left: -30px;
+  padding: 0;
 }
 
 .js-gallery__item {
