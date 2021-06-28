@@ -7,12 +7,12 @@ const ingredients = [
   'Приправы',
 ];
 
-const listEl = document.querySelector('#ingredients');
+const ingredientsListRef = document.querySelector('#ingredients');
 
-listEl.append(
+ingredientsListRef.append(
   ...ingredients.map((ingredient) => {
-    const listItemEl = document.createElement('li');
-    listItemEl.textContent = ingredient;
-    return listItemEl;
+    const ingredientsListItemRef = document.createElement('li');
+    ingredientsListItemRef.textContent = ingredient;
+    return ingredientsListItemRef;
   }),
 );

@@ -1,10 +1,10 @@
-const listEl = document.querySelector('#categories');
-const listItemEl = listEl.querySelectorAll('.item');
+const categoriesListRef = document.querySelector('#categories');
+const categoriesListItemRef = categoriesListRef.querySelectorAll('.item');
 
-console.log(`В списке ${listItemEl.length} категории.`);
+console.log(`В списке ${categoriesListItemRef.length} категории.`);
 
-listItemEl.forEach((item) => {
+categoriesListItemRef.forEach((category) => {
   console.log('=========================');
-  console.log('Категория:', item.querySelector('h2').textContent);
-  console.log('Количество элементов:', item.querySelectorAll('li').length);
+  console.log('Категория:', category.querySelector('h2').textContent);
+  console.log('Количество элементов:', category.querySelectorAll('li').length);
 });

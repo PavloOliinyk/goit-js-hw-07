@@ -13,8 +13,26 @@
         color: #424242;
         line-height: 1.5;
       }
+      .list {
+        list-style: none;
+      }
+      .gallery__list {
+        display: flex;
+        align-items: center;
+
+        margin-left: -30px;
+        padding: 0;
+      }
+      .gallery__item {
+        margin-left: 30px;
+        flex-basis: calc(100% / 3 - 30px);
+      }
+      .gallery__image {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
     </style>
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <p><a href="index.html">На главную</a></p>

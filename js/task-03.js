@@ -13,9 +13,9 @@ const images = [
   },
 ];
 
-const listGalleryEl = document.querySelector('#gallery');
+const galleryListRef = document.querySelector('#gallery');
 
-listGalleryEl.insertAdjacentHTML(
+galleryListRef.insertAdjacentHTML(
   'afterbegin',
   images.reduce(
     (str, { url, alt }) =>
@@ -25,4 +25,4 @@ listGalleryEl.insertAdjacentHTML(
   ),
 );
 
-listGalleryEl.classList.add('list', 'gallery__list');
+galleryListRef.classList.add('list', 'gallery__list');
