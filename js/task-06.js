@@ -12,7 +12,6 @@ function onInputRefChange() {
     return;
   }
 
-  console.log(inputRef.value.length);
   inputRef.classList.add('invalid');
   inputRef.classList.remove('valid');
 }
